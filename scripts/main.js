@@ -1,4 +1,5 @@
 const ui_ctrl = (() => {
+    const board = []
     const game_settings = {
         theme: null,
         players: null,
@@ -9,8 +10,11 @@ const ui_ctrl = (() => {
         players: document.getElementById('players'),
         grid_size: document.getElementById('grid-size'),
         btn_start: document.getElementById('btn-start'),
+        btn_menu: document.getElementById('btn-menu'),
         start_game_section: document.getElementById('start-game-section'),
         game_board_section: document.getElementById('game-board-section'),
+        main_container: document.getElementById('main-container'),
+        board: document.getElementById('board'),
     }
 
     const init_event_listeners = () => {
@@ -38,7 +42,16 @@ const ui_ctrl = (() => {
         dom_strings.btn_start.addEventListener('click', () => {
             dom_strings.start_game_section.classList.add('hide')
             dom_strings.game_board_section.classList.remove('hide')
+            dom_strings.main_container.style.backgroundColor = 'var(--white)';
         })
+    }
+
+    const draw_board = (grid_size) => {
+        const numbers = []
+        const signs = []
+        for(let i = 0; i < grid_size; i++) {
+            board.push([])
+        }
     }
 
     return {
