@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <section class="start-game" id="start-game-section">
+    <div class="container" id="main-container">
+        <section class="start-game hide" id="start-game-section">
             <h1 class="title">memory</h1>
             <div class="game-selections">
                 <p>Select Theme</p>
@@ -32,8 +32,14 @@
                 <button class="btn btn-big yellow" id="btn-start">Start Game</button>
             </div>
         </section>
-        <section class="game-board" id="game-board-section">
+        <section class="game-board " id="game-board-section">
+            <header class="header">
+                <img src="./assets/logo.svg" alt="logo picture" class="logo" />
+                <button class="btn btn-smaller yellow" id="btn-menu">Menu</button>
+            </header>
+            <div class="board" id="board">
 
+            </div>
         </section>
     </div>
     <script src="./scripts/main.js"></script>
