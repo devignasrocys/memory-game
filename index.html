@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section class="start-game" id="start-game-section">
+            <h1 class="title">memory</h1>
+            <div class="game-selections">
+                <p>Select Theme</p>
+                <div class="row" id="theme">
+                    <button class="btn">Numbers</button>
+                    <button class="btn">Icons</button>
+                </div>
+                <p>Numbers of Players</p>
+                <div class="row" id="players">
+                    <button class="btn btn-1-4">1</button>
+                    <button class="btn btn-1-4">2</button>
+                    <button class="btn btn-1-4">3</button>
+                    <button class="btn btn-1-4">4</button>
+                </div>
+                <p>Grid Size</p>
+                <div class="row" id="grid-size">
+                    <button class="btn">4x4</button>
+                    <button class="btn">6x6</button>
+                </div>
+                <button class="btn btn-big yellow" id="btn-start">Start Game</button>
+            </div>
+        </section>
+        <section class="game-board" id="game-board-section">
+
+        </section>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
